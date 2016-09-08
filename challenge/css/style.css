@@ -1,0 +1,25 @@
+body{
+  margin:0;
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;;
+}
+
+ul{
+  margin: 0;
+}
+
+nav{
+
+}
+
+nav div{
+  width: 50%;
+}
+
+nav ul li{
+  display: block;
+  padding: 1%;
+  
+  width: 50%;
+}
