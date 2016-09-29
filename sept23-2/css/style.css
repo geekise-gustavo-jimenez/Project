@@ -1,7 +1,7 @@
 body{
   margin: 0;
   text-align: center;
-  background-color: hsla(306, 90%, 49%, 0.2);
+  background-color: hsl(295, 99%, 85%);
 }
 
 section{
@@ -17,8 +17,10 @@ div{
 }
 
 header hr{
+  margin-top: 10%;
   width: 5%;
 }
+
 section div hr{
   width: 100%;
 }
@@ -30,5 +32,6 @@ h1{
 input{
   margin-bottom: 10px;
   padding:2px 10px;
-  background-color: purple;
+  border-radius: 10%;
+  background-color: hsla(280, 95%, 32%, 0.93);
 }
