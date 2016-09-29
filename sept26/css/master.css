@@ -38,6 +38,14 @@ a{
     margin: 0 5px;
 }
 
+main aside section:nth-of-type(1){
+  margin-right: 5px;
+}
+
+main aside section:nth-of-type(3){
+  margin-left: 5px;
+}
+
 div p{
   width: 75%;
   font-size: 20px;
@@ -89,15 +97,28 @@ footer{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
+  font-size: 10px;
+  background-color: hsl(302, 66%, 47%);
 }
 
 input{
   height: 30px;
   width: 66%;
   border-radius: 6px;
+  margin-top: 15px;
+
 }
 
 footer div{
   display: flex;
   flex-direction: row;
+}
+
+.message{
+  height:100px;
+}
+
+aside section div h1 i{
+  margin-right: 50px;
 }
