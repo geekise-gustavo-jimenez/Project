@@ -8,6 +8,37 @@
     <title>Forms</title>
   </head>
   <body>
+    <section id="contacts">
+      <h2>contacts</h2>
+    <hr />
+    <hr />
 
+    <form>
+      <div>
+        <legend><span>Name</span>
+          <input type="text" id="name" value="" />
+        </legend>
+        <legend><span>Email</span>
+          <input type="email" id="email" value="" />
+        </legend>
+      </div>
+      <div>
+        <textarea id="message" cols="30"
+        rows="2" placeholder="Message"></textarea>
+        <button type="button" id="button">SEND</button>
+        <!-- <input type="submit" id="submit" value="SEND"/> -->
+      </div>
+    </form>
+    </section>
+    <script>
+      var span = document.querySelectorAll('legend span');
+      // console.log(span);
+      for(var i = 0; i < span.length; i++){
+        span[i].addEventListener('click', function(){
+          // console.log(this);
+          this.classList.toggle('placeholder');
+        });
+      };
+    </script>
   </body>
 </html>
