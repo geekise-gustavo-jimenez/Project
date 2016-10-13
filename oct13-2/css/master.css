@@ -1,109 +1,94 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
-
 body{
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+header{
+  height: 100vh;
+  background-image: url(../img/slide-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav{
+  display: flex;
+}
+
+nav div{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  margin: 0;
+
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+
+}
+
+ul li:hover{
+  background-color: lightblue;
+}
+
+section{
+  display: flex;
+  height: 70vh;
+}
+
+.right{
+  
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+}
+
+.left h1{
+  font-size: 20vw;
   margin: 0;
 }
 
-h2{
-  text-transform: uppercase;
+.left span{
+
 }
 
-h2 + hr{
-  width: 15vw;
-  height: 3px;
-  background-color: hsla(198, 50%, 58%, 1)
-}
-
-hr{
-  border: none;
-  height: 1px;
-  background-color: white;
-}
-
-form{
-  margin-top: 50px;
-}
-
-form div{
+.right div{
+  height: 5vh;
+  width: 5vw;
   display: flex;
-  padding: 0;
-  border: none;
-  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+
+  border: 1px solid white;
 }
 
-form div:first-child legend{
+.left{
   flex: 1;
-  margin-right: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
-form input, form textarea{
-  font-family: inherit;
-  font-size: inherit;
-  line-height: 2;
-  border-width: 0 0 1px 0;
-  border-style: solid;
-  border-color: hsla(0, 0%, 90%, 1);
-}
-
-form div:first-child legend:last-child{
-  margin-right: 0;
-}
-
-form textarea{
-  flex: 1;
-  margin-right: 20px;
-}
-
-form button[type="button"]{
-  width: 20vw;
-  padding: 10px;
-  align-self: flex-end;
+input{
+  width: 100px;
+  height: 50px;
   color: white;
-
-  position: relative;
+  background-color: hsla(198, 50%, 58%, 1);
   border: none;
-  background-image: linear-gradient(to bottom,
-     hsla(198, 50%, 58%, 1),
-     hsla(198, 50%, 70%, 1)
-      );
-    cursor: pointer;
-}
-
-form button[type="button"]::before{
-  font-family: inherit;
-  font-size: inherit;
-  line-height: 2;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom,
-     hsla(198, 50%, 58%, 1),
-     hsla(198, 50%, 70%, 1)
-      );
-  z-index: -10;
-  opacity: 1;
-  transition: all 250ms ease-in-out;
-  align-self: flex-start;
-}
-
-form legend span.placeholder{
-  top:0px;
-}
-
-form legend span{
-  position: relative;
-  top: 25px;
-  transition:  all 250ms ease-in-out;
-
-}
-
-form button[type="button"]:hover::before{
-  opacity: 0;
 }
