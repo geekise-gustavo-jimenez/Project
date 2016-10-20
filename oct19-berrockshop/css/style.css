@@ -1,0 +1,141 @@
+body{
+  background-color: #731514;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-bottom: 0;
+}
+
+header{
+  width: 800px;
+  background-color: #FFFFF0;
+}
+
+header div{
+  display: flex;
+  flex: 1;
+  border: 3px solid black;
+}
+
+header div div{
+  display: flex;
+  border-right: 3px solid black;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+header h1{
+  margin: 0;
+  color: #D2A800;
+  text-align: center;
+}
+
+header div img{
+  flex: 3;
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px dotted #B5B5AA;
+  border-bottom: 2px dotted #B5B5AA;
+  margin-left: 15px;
+  width: 800px;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: #731514;
+}
+
+hr{
+  border: 2px solid #731514;
+  margin-top: 0;
+}
+
+.home{
+  display: flex;
+
+  padding-top: 40px;
+  width: 800px;
+}
+
+main{
+  width: 800px;
+  background-color: #FFFFF0;
+}
+.home section {
+  flex: 1;
+  margin-left: 40px;
+
+}
+
+.home .left_home div:nth-of-type(1) div{
+  display: flex;
+
+}
+
+p{
+  font-size: 1vw;
+}
+
+.home .right_home > div{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  border: 2px solid gray;
+  align-items: center;
+  border-radius: 5%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.home .right_home > div h1{
+  position: relative;
+  background-color: #FFFFF0;
+}
+
+.home .right_home > div:nth-of-type(1) h1{
+  transform: translate3d(-45%, -120%, 0);
+}
+
+.home .right_home > div:nth-of-type(2) h1{
+  transform: translate3d(-15%, -120%, 0);
+}
+
+.home .right_home > div:nth-of-type(3) h1{
+  transform: translate3d(-25%, -120%, 0);
+}
+
+.home .right_home > div:nth-of-type(4) h1{
+  transform: translate3d(-90%, -120%, 0);
+}
+
+.history{
+  display: flex;
+}
+
+.history .left_history{
+  padding: 30px;
+  flex: 2;
+}
+
+.history .left_history p{}
+
+.history .left_history img:nth-of-type(1){
+  float: right;
+}
+
+.history .right_history{
+  margin-top: 40px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
