@@ -259,8 +259,10 @@ footer{
   justify-content: space-between;
   border-bottom: 2px dotted #B5B5AA;
 
-  background-image: linear-gradient(#FFFFF0,
-    #731514;);
+  background-image: linear-gradient( to right, hsla(0, 100%, 100%,1) 15%,
+  hsla(0, 100%, 100%, 0.1) 15%,
+  hsla(0, 40%, 90%, 0.3) 20%,
+  hsla(0, 90%, 30%, 0.5) 50%);
 }
 
 .contact .basic2{
